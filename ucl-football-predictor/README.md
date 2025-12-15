@@ -33,9 +33,13 @@ Since the new UCL format involves complex tie-breakers (Goal Difference, Goals F
 ```text
 ucl-football-predictor/
 ├── data/
-│   └── raw/            # CSV files containing Match Schedule and Team Ratings
+│   └── raw/
+│       ├── matches.csv       # The official schedule & results
+│       └── ratings.csv       # Team Elo ratings
 ├── src/
-│   ├── simulation_engine.py  # The core logic (Maths & Probability models)
-│   └── fetch_ratings.py      # Scripts to fetch/update data
-├── main.py             # Entry point: CLI Menu & Visualization orchestration
-└── requirements.txt    # Python dependencies
+│   ├── simulation_engine.py  # CORE LOGIC: Implementation of Poisson & Dixon-Coles models
+│   ├── generate_schedule.py  # SETUP: Generates the initial match schedule CSV
+│   └── fix_ratings.py        # UTILITY: Aligns team names between different data sources
+├── main.py                   # ENTRY POINT: CLI Menu, Monte Carlo loop & Visualization
+├── requirements.txt          # Python dependencies (pandas, matplotlib, etc.)
+└── README.md
