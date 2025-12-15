@@ -30,7 +30,7 @@ I implement the **Dixon-Coles (1997)** adjustment factor ($\rho = -0.13$) to cor
 Since the new UCL format involves complex tie-breakers (Goal Difference, Goals For), analytical calculation is impossible. I use Monte Carlo simulations to "play" the tournament thousands of times, aggregating the results to derive the probability of specific outcomes (e.g., *What is the % chance of PSG finishing in the Top 8?*).
 
 ## 🛠️ Project Structure
-
+```text
 ucl-football-predictor/
 ├── data/
 │   └── raw/            # CSV files containing Match Schedule and Team Ratings
