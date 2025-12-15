@@ -1,0 +1,27 @@
+# --- Python & Cache (Indispensable) ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Environnements Virtuels (NE JAMAIS COMMITER ÇA) ---
+venv/
+env/
+.venv/
+.env
+
+# --- Fichiers Systèmes (Mac & Windows) ---
+.DS_Store
+Thumbs.db
+
+# --- IDE & Éditeurs (VS Code, Pycharm...) ---
+.vscode/
+.idea/
+*.swp
+
+# --- Projet Foot : Fichiers générés ---
+# On ignore les résultats de simulation car ils changent tout le temps
+# et on peut les régénérer en lançant le script.
+resultats_simulation.csv
+*.png
+*.jpg
+
